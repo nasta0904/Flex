@@ -118,9 +118,9 @@ body {
 
 .article_s-img {
     float: right;
-    width: 150px;
+    width: 120px;
     height: 150px;
-    margin-right: 20px;
+    margin-right: 5px;
     background: #bdc3c7;
     display: flex;
     align-items: center;
