@@ -228,6 +228,12 @@ body {
         margin: 0 auto 15px;
         display: block;
     }
+
+    .article-img2 {
+        float: none;
+        margin: 0 auto 15px;
+        display: block;
+    }
     
     .footer-info, .footer-links {
         float: none;
