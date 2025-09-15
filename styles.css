@@ -132,6 +132,11 @@ body {
     overflow: hidden;
 }
 
+.article-text {
+  float: right;
+    overflow: hidden;
+}
+
 
 .article h3 {
     color: #2c3e50;
