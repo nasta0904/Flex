@@ -116,17 +116,6 @@ body {
     justify-content: center;
 }
 
-.article_s-img {
-    float: right;
-    width: 120px;
-    height: 150px;
-    margin-right: 5px;
-    background: #bdc3c7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-}
 
 .article-text {
     overflow: hidden;
@@ -226,12 +215,6 @@ body {
     .article-img {
         float: none;
         margin: 0 auto 15px;
-        display: block;
-    }
-
-    .article_s-img {
-        float: none;
-        margin: 0 auto 10px;
         display: block;
     }
     
