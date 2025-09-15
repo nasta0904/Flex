@@ -16,7 +16,13 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header с Float */
 .header {
     background: #2c3e50;
     color: white;
@@ -27,20 +33,25 @@ body {
     z-index: 1000;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo {
+    float: left;
 }
 
 .logo h1 {
     font-size: 1.8rem;
 }
 
+.nav {
+    float: right;
+}
+
 .nav-list {
-    display: flex;
     list-style: none;
-    gap: 2rem;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-left: 2rem;
 }
 
 .nav-list a {
@@ -53,31 +64,45 @@ body {
     color: #3498db;
 }
 
-/* Hero Section */
+/* Hero Section с Float */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #ecf0f1;
     padding: 120px 0 80px;
-    text-align: center;
     margin-top: 60px;
 }
 
-.hero-content {
+.hero-text {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.hero-image {
+    float: right;
+    width: 45%;
+}
+
+.image-placeholder {
+    background: #3498db;
+    height: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: #7f8c8d;
 }
 
 .btn {
@@ -95,26 +120,69 @@ body {
     background: #c0392b;
 }
 
-/* Features Section */
-.features {
+/* Services с Float */
+.services {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
-.features h2 {
+.services h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #2c3e50;
 }
 
-.features-grid {
+.service-item {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.service-icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.service-content {
+    margin-left: 80px;
+}
+
+.service-content h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Team Section с Flex */
+.team {
+    padding: 80px 0;
+    background: #ecf0f1;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.team-grid {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.feature-card {
+.team-member {
     flex: 1;
     min-width: 250px;
     background: white;
@@ -122,92 +190,196 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
-}
-
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-/* Gallery Section */
-.gallery {
-    padding: 80px 0;
-}
-
-.gallery h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
-
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.gallery-item {
-    flex: 1 1 calc(33.333% - 1rem);
-    min-width: 250px;
-    height: 200px;
-    background: #3498db;
-    border-radius: 10px;
+.member-photo {
+    width: 100px;
+    height: 100px;
+    background: #95a5a6;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.2rem;
+}
+
+.team-member h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials с Float */
+.testimonials {
+    padding: 80px 0;
+    background: white;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.testimonial {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.testimonial-image {
+    float: left;
+    width: 100px;
+    margin-right: 2rem;
+}
+
+.client-avatar {
+    width: 80px;
+    height: 80px;
+    background: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.testimonial-content {
+    margin-left: 120px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+cite {
     font-weight: bold;
-    transition: transform 0.3s;
+    color: #2c3e50;
+    font-style: normal;
 }
 
-.gallery-item:hover {
+/* Pricing с Flex */
+.pricing {
+    padding: 80px 0;
+    background: #ecf0f1;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-plan {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pricing-plan.featured {
     transform: scale(1.05);
+    border: 2px solid #3498db;
 }
 
-/* Footer */
+.pricing-plan h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.features-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Footer с Float и Flex */
 .footer {
     background: #2c3e50;
     color: white;
-    padding: 3rem 0;
+    padding: 3rem 0 1rem;
 }
 
-.footer-content {
+.footer-columns {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-.footer-section {
+.footer-column {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
 }
 
-.footer-section h4 {
+.footer-column h4 {
+    color: #3498db;
     margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
     color: #3498db;
 }
 
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    padding-top: 1rem;
+}
+
+.copyright {
+    float: left;
+}
+
 .social-links {
-    display: flex;
-    gap: 1rem;
+    float: right;
 }
 
 .social-links a {
     color: white;
     text-decoration: none;
+    margin-left: 1rem;
     transition: color 0.3s;
 }
 
@@ -217,44 +389,64 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        gap: 1rem;
+    .logo, .nav {
+        float: none;
         text-align: center;
     }
     
-    .features-grid {
-        flex-direction: column;
+    .nav-list li {
+        display: block;
+        margin: 0.5rem 0;
     }
     
-    .footer-content {
-        flex-direction: column;
+    .hero-text, .hero-image {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
     }
     
-    .hero h2 {
-        font-size: 2rem;
+    .service-icon {
+        float: none;
+        margin: 0 auto 1rem;
     }
     
-    .gallery-item {
-        flex: 1 1 calc(50% - 1rem);
+    .service-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .testimonial-image {
+        float: none;
+        margin: 0 auto 1rem;
+    }
+    
+    .testimonial-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .copyright, .social-links {
+        float: none;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .social-links a {
+        margin: 0 0.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .gallery-item {
-        flex: 1 1 100%;
+    .team-grid, .pricing-grid {
+        flex-direction: column;
     }
     
-    .hero {
-        padding: 100px 0 60px;
+    .pricing-plan.featured {
+        transform: none;
     }
     
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
