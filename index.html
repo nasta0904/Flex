@@ -3,101 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Website</title>
+    <title>Float & Flex Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header с Float -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>MyFlexSite</h1>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
+            <div class="logo">
+                <h1>FloatFlex Site</h1>
             </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section с Float -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Добро пожаловать на наш сайт</h2>
-                <p>Современные решения для вашего бизнеса</p>
-                <button class="btn">Узнать больше</button>
+                <div class="hero-text">
+                    <h2>Современный подход к веб-разработке</h2>
+                    <p>Сочетание классических и современных технологий</p>
+                    <button class="btn">Начать работу</button>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">Изображение</div>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- Services с Float -->
+    <section class="services">
         <div class="container">
-            <h2>Наши преимущества</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Быстро</h3>
-                    <p>Высокая скорость работы и отклика</p>
+            <h2>Наши услуги</h2>
+            <div class="service-item">
+                <div class="service-icon">💻</div>
+                <div class="service-content">
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных веб-сайтов и приложений</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💡</div>
-                    <h3>Инновации</h3>
-                    <p>Современные технологии и подходы</p>
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">📱</div>
+                <div class="service-content">
+                    <h3>Мобильные приложения</h3>
+                    <p>Разработка под iOS и Android</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Надежно</h3>
-                    <p>Гарантия качества и безопасности</p>
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">🎨</div>
+                <div class="service-content">
+                    <h3>Дизайн</h3>
+                    <p>Создание уникального пользовательского интерфейса</p>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
+    <!-- Team Section с Flex -->
+    <section class="team">
         <div class="container">
-            <h2>Наши работы</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">Проект 1</div>
-                <div class="gallery-item">Проект 2</div>
-                <div class="gallery-item">Проект 3</div>
-                <div class="gallery-item">Проект 4</div>
-                <div class="gallery-item">Проект 5</div>
-                <div class="gallery-item">Проект 6</div>
+            <h2>Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">Фото 1</div>
+                    <h3>Анна Иванова</h3>
+                    <p>Frontend разработчик</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">Фото 2</div>
+                    <h3>Петр Сидоров</h3>
+                    <p>Backend разработчик</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">Фото 3</div>
+                    <h3>Мария Петрова</h3>
+                    <p>UI/UX дизайнер</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Testimonials с Float -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                    <div class="client-avatar">Аватар</div>
+                </div>
+                <div class="testimonial-content">
+                    <blockquote>
+                        "Отличная работа! Сайт был создан быстро и качественно."
+                        <cite>— Иван Сергеев, CEO Company</cite>
+                    </blockquote>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="testimonial">
+                <div class="testimonial-image">
+                    <div class="client-avatar">Аватар</div>
+                </div>
+                <div class="testimonial-content">
+                    <blockquote>
+                        "Профессиональный подход и внимание к деталям."
+                        <cite>— Елена Ковалева, Marketing Director</cite>
+                    </blockquote>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing с Flex -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Наши тарифы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-plan">
+                    <h3>Стандарт</h3>
+                    <div class="price">$99/мес</div>
+                    <ul class="features-list">
+                        <li>5 страниц</li>
+                        <li>Базовый дизайн</li>
+                        <li>Техподдержка</li>
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-plan featured">
+                    <h3>Профессионал</h3>
+                    <div class="price">$199/мес</div>
+                    <ul class="features-list">
+                        <li>10 страниц</li>
+                        <li>Индивидуальный дизайн</li>
+                        <li>Приоритетная поддержка</li>
+                        <li>SEO оптимизация</li>
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+                
+                <div class="pricing-plan">
+                    <h3>Премиум</h3>
+                    <div class="price">$299/мес</div>
+                    <ul class="features-list">
+                        <li>Неограниченно страниц</li>
+                        <li>Эксклюзивный дизайн</li>
+                        <li>24/7 поддержка</li>
+                        <li>Маркетинг</li>
+                    </ul>
+                    <button class="btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer с Float и Flex -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>О компании</h4>
-                    <p>Мы создаем лучшие digital-решения</p>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
                 </div>
-                <div class="footer-section">
+                
+                <div class="footer-column">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#">Веб-разработка</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Консультации</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
                     <h4>Контакты</h4>
-                    <p>Email: info@example.com</p>
+                    <p>Email: info@floatflex.ru</p>
                     <p>Телефон: +7 (999) 999-99-99</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Соцсети</h4>
-                    <div class="social-links">
-                        <a href="#">VK</a>
-                        <a href="#">Telegram</a>
-                        <a href="#">YouTube</a>
-                    </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2024 FloatFlex Site. Все права защищены.
                 </div>
+                <div class="social-links">
+                    <a href="#">VK</a>
+                    <a href="#">TG</a>
+                    <a href="#">YT</a>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </footer>
