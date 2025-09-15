@@ -98,6 +98,8 @@ body {
 }
 
 .article {
+		width: 400px;
+	text-align: justify;
     background: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -129,8 +131,7 @@ body {
 
 
 .article-text {
-  	width: 400px;
-	text-align: justify;
+    overflow: hidden;
 }
 
 
