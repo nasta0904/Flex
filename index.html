@@ -1,87 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/251/634/png-transparent-drawing-crayon-pencil-blue-pencil-leaf.png">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/c6/a7/08/c6a708a4cec8e91f006d4b024760ea37.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простой сайт - Float & Flex</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Погода в Усть-Илимске</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Шапка с Float -->
-    <header class="header">
-        <div class="logo">
-            <h1>МойСайт</h1>
-        </div>
-        <nav class="nav">
-            <a href="#">Главная</a>
-            <a href="#">О нас</a>
-            <a href="#">Услуги</a>
-            <a href="#">Контакты</a>
-        </nav>
-        <div class="clearfix"></div>
-    </header>
+    <div class="container">
+        <main>
 
-    <!-- Основной контент -->
-    <main class="main">
-        <!-- Боковая панель с Float -->
-        <aside class="sidebar">
-            <h3>Меню</h3>
-            <ul>
-                <li><a href="#">Ссылка 1</a></li>
-                <li><a href="#">Ссылка 2</a></li>
-                <li><a href="#">Ссылка 3</a></li>
-                <li><a href="#">Ссылка 4</a></li>
-            </ul>
-        </aside>
+           <div id="f1fa576f8665be52ff8a3b8fdee36ca4" class="pogoda">
+               <p class="ww-informers-box-854754">
+                   <a href="https://world-weather.ru/pogoda/russia/ust_ilimsk/14days/">Точный прогноз погоды в Усть-Илимске на 2 недели</a><br>
+                   <a href="https://world-weather.ru/pogoda/russia/omsk/">world-weather.ru</a>
+               </p>
+           </div>
+            <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f1fa576f8665be52ff8a3b8fdee36ca4">
+                       
+                   </script>
+            <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            </style>
+        </main>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/251/634/png-transparent-drawing-crayon-pencil-blue-pencil-leaf.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в Усть-Илимске</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main>
 
-        <!-- Контент с Float -->
-        <section class="content">
-            <h2>Добро пожаловать!</h2>
-            <div class="article">
-                <img src="https://i.pinimg.com/originals/45/8a/bb/458abb04cf5593a4e7dda9819bcc219e.jpg" alt="Изображение" class="article-img">
-                <div class="article-text">
-                    <h3>серый котенок</h3>
-                    <p>это маленькое облачко с изумрудными глазами. Его мягкая шерстка напоминает серебристый туман раннего утра, каждый волосок переливается благородным стальным оттенком. Этот малыш движется с грацией дикой кошки, его лапки ступают бесшумно, словно он все еще пытается поймать пушистые сны из своего кошачьего детства.
-                    Серые котята часто обладают спокойным и вдумчивым характером. Они любят наблюдать за миром с высоты подоконника, их внимательный взгляд словно фиксирует каждую мелочь. Когда такой котенок мурлычет, кажется, что где-то тихо перебирают бархатные струны. Он не требователен, но бесконечно благодарен за ласку и тепло человеческих рук.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="article">
-                <img src="https://avatars.mds.yandex.net/i?id=3b1e49b99ffd2d0c4d9c569ecb8656b2_l-10207670-images-thumbs&n=13" alt="Изображение" class="article-img2">
-                <div class="article-text">
-                    <h3>рыжий котенок</h3>
-                    <p> это солнечный зайчик в мире кошек. Его шубка цвета спелого апельсина или теплого медного заката сразу привлекает внимание. Этот маленький огонек не сидит на месте – он постоянно в движении, исследуя каждый уголок с любопытством первооткрывателя.
-                    Рыжики обычно обладают ярким и задорным характером. Они обожают игры, готовы носиться за бантиком до полного изнеможения, а потом сладко засыпать в самом неожиданном месте. Их преданность сравнима с собачьей – они будут следовать за хозяином по пятам и громко мурлыкать, требуя внимания. В народе говорят, что рыжие коты приносят в дом радость и благополучие, и глядя на этого энергичного малыша, легко в это поверить.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </section>
-        <div class="clearfix"></div>
-    </main>
-
-    <!-- Галерея с Flex -->
-    <section class="gallery">
-        <h2>Наша галерея</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">Фото 1</div>
-            <div class="gallery-item">Фото 2</div>
-            <div class="gallery-item">Фото 3</div>
-            <div class="gallery-item">Фото 4</div>
-        </div>
-    </section>
-
-    <!-- Подвал с Float -->
-    <footer class="footer">
-        <div class="footer-info">
-            <p>&copy; 2024 МойСайт. Все права защищены.</p>
-        </div>
-        <div class="footer-links">
-            <a href="#">Политика</a>
-            <a href="#">Конфиденциальность</a>
-        </div>
-        <div class="clearfix"></div>
-    </footer>
+           <div id="f1fa576f8665be52ff8a3b8fdee36ca4" class="pogoda">
+               <p class="ww-informers-box-854754">
+                   <a href="https://world-weather.ru/pogoda/russia/ust_ilimsk/14days/">Точный прогноз погоды в Усть-Илимске на 2 недели</a><br>
+                   <a href="https://world-weather.ru/pogoda/russia/omsk/">world-weather.ru</a>
+               </p>
+           </div>
+            <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f1fa576f8665be52ff8a3b8fdee36ca4">
+                       
+                   </script>
+            <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            </style>
+        </main>
+    </div>
 </body>
 </html>
